@@ -1,0 +1,184 @@
+#header{
+    font-size:500%;
+    position: absolute;
+    left: 37%;
+    top: 10%;
+    text-decoration:solid bisque 2px;
+    text-shadow: 0px 0px 50px rgb(2, 208, 240);
+    animation: textglow 5s linear infinite;
+}
+@keyframes textglow {
+    0%{
+        text-shadow: 1px 1px 40px rgb(2, 208, 240);
+    }
+    50%{
+        text-shadow: none;
+    }
+    100%{
+        text-shadow: 1px 1px 40px rgb(2, 208, 240);
+    }
+}
+body{
+    background:black;
+    height: 100vh;
+    color:white;
+    display: flex;
+    flex-direction: column;
+}
+#task-list{
+    list-style-type:none;
+}
+dialog{
+    background-color: black;
+    border-radius:5px;
+    border-width: 1px;
+    border-color: rgb(0, 191, 255);
+    box-shadow: 0 1px 10px 1px rgb(0, 191, 255);
+    align-items: center;
+}
+#click{
+    position: absolute;
+    width: 50%;
+    top: 30%;
+    left:23%;
+    background-color:black;
+    border-color: #FF0000,#ffa500,#FFFF00,green,#00FFFF,#0000FF,Magenta,Black,White,Gray;
+    color: white;
+    border-style:outset inset outset inset;
+    padding:20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 20px;
+    border-width: 1px;
+    animation: glow 10s linear infinite;
+    box-shadow:0px 0px 10px 2px #FF0000,0px 0px 10px 2px #ffa500,0px 0px 10px 2px #FFFF00, 0px 0px 10px 2px green,0px 0px 10px 2px #00FFFF,0px 0px 10px 2px #0000FF,0px 0px 10px 2px Magenta,0px 0px 10px 2px Black,0px 0px 10px 2px White,0px 0px 10px 2px Gray;
+    font-size: 30px;
+}
+@keyframes glow{
+    0%{
+       border-color: #FF0000;
+       box-shadow:  0px 0px 10px 2px #FF0000;
+    }
+    10%{
+        border-color: #ffa500;
+        box-shadow:0px 0px 10px 2px #ffa500;
+    }
+    20%{
+        border-color: #FFFF00;
+        box-shadow:0px 0px 10px 2px#FFFF00;
+    }
+    30%{
+        border-color: green;
+        box-shadow: 0px 0px 10px 2px green;
+    }
+    40%{
+        border-color: #00FFFF;
+        box-shadow: 0px 0px 10px 2px #00FFFF;
+    }
+    50%{
+        border-color: #0000FF;
+        box-shadow:  0px 0px 10px 2px #0000FF;
+    }
+    60%{
+        border-color: blueviolet;
+        box-shadow:0px 0px 10px 2px blueviolet;
+    }
+    70%{
+        border-color:magenta;
+        box-shadow:0px 0px 10px 2px magenta;
+    }
+    80%{
+        border-color:white;  
+        box-shadow:0px 0px 10px 2px white;
+    }
+    90%{
+        border-color:lightcoral;
+        box-shadow:0px 0px 10px 2px lightcoral;
+    }
+    100%{
+        border-color:rgb(255, 56, 56);
+        box-shadow: 0px 0px 10px 2px rgb(255, 56, 56);
+    }
+}
+#click:hover{
+    box-shadow: 0 0 50px 10px rgb(154, 192, 204);
+    background-color: rgb(0, 153, 255);
+    border-color: rgb(0, 183, 255);
+    transform:scaleX(300px);
+    transition: all 0.5s ease-in-out;
+    text-shadow: -2px -2px 3px black;
+}   
+#task-container{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 251, 251);
+    text-align:center;
+    border-radius: 20px;
+    border: solid .1px aquamarine;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    box-shadow: 0px 0px 10px 2px whitesmoke;
+    width: 300px;
+
+}
+#class{
+    list-style:none;
+    color: antiquewhite;
+    margin: 10px;
+    overflow-y: auto;
+    text-align: left;
+    font-size: 20px;
+}
+#class li input[type="checkbox"]{
+    transform: scale(1.5);
+    margin:8px;
+    margin-right: 12px;
+}
+#task-list li{
+    color: antiquewhite;
+    margin: 10px;
+    overflow-y: auto;
+    text-align: left;
+    font-size: 20px;
+    cursor:grab
+}
+#task-list li input[type="checkbox"]{
+    transform: scale(1.1);
+    margin: 8px;
+    margin-right:12px;
+    cursor: pointer;
+}
+#task-list:empty{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 251, 251);
+    left: 40%;
+    top: 20%;
+    text-align:left;
+    padding-right:40px;
+}
+#task-list li:active{
+    cursor: grabbing;
+    opacity:0.6;
+}
+.remove-btn{
+    background: black;
+    color: white;
+    border-color:white;
+    border-width: 1px;
+    box-shadow:0px 0px 5px 1px burlywood;
+}
+.tasks{
+    background-color:wheat;
+    color: black;
+    margin: 10px;
+}
+.tasks:hover{
+    background-color:wheat;
+    color: black;
+    cursor: pointer;
+}
+.close{
+    background-color:wheat;
+    margin: 10px;
+}
