@@ -136,7 +136,7 @@ dialog{
     margin: 10px;
     overflow-y: auto;
     text-align: left;
-    font-size:2.5rem;
+    font-size:2rem;
 }
 #class li input[type="checkbox"]{
     transform: scale(1.5);
@@ -148,7 +148,7 @@ dialog{
     margin: 10px;
     overflow-y: auto;
     text-align: left;
-    font-size: 20px;
+    font-size: 2rem;
     cursor:grab
 }
 #task-list li input[type="checkbox"]{
