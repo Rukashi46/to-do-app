@@ -127,7 +127,8 @@ dialog{
     box-shadow: 0px 0px 10px 2px whitesmoke;
     width:100%;
     max-width: 400px;
-
+    scrollbar-color: rgb(0, 157, 255);
+    scroll-behavior: smooth;
 }
 #class{
     list-style:none;
