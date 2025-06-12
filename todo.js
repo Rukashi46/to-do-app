@@ -69,5 +69,3 @@ closeButton.addEventListener("click",() =>{
 });
 li.classList.add("fade-out");
     setTimeout(()=> li.remove(),300);
-
-
